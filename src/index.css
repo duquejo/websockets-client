@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(6 95 70 / 20%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(6 95 70 / 73%);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+@layer base {
+  body {
+    @apply font-normal;
+  }
+  h1 {
+    @apply text-5xl font-bold;
+  }
+}
